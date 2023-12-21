@@ -26,7 +26,7 @@ Une section aide est disponible dans le menu. Elle ouvre un document text (Ou un
 - SQLite3 (inclus dans la plupart des installations Python)
 
 ## Installation
-1. Cloner le référentiel : `git clone https://github.com/votre-utilisateur/votre-repo.git`
+1. Cloner le référentiel : `git clone https://github.com/Nawfoel-Ardjoune/BDD_web`
 2. Accéder au répertoire du projet : `cd votre-repo`
 3. Installer les dépendances : `pip install -r requirements.txt` (si nécessaire)
 
@@ -34,4 +34,4 @@ Une section aide est disponible dans le menu. Elle ouvre un document text (Ou un
 Executable: BDD_prog.exe
 		ou
 ```bash
-python BDD_Dir_manager.py
+python BDD_prog.py
