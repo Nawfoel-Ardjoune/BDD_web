@@ -1,0 +1,27 @@
+c'est un simple gestionnaire de fichiers fait pour un projet en web
+
+Les Fonctionnalitées :
+   - Ouvrir un répertoire et afficher les fichiers/dossiers.
+   - Rechercher des fichiers par nom.
+   - Supprimer des fichiers.
+   - Trier les fichiers par nom, type, date de création ou de modification.
+   - Ouvrir un dossier pour explorer son contenu.
+   - Revenir au dossier parent.
+
+Utilisation :
+   - Ouvrir un répertoire : Sélectionnez "Fichier -> Ouvrir" dans le menu.
+   - Rechercher des fichiers : Saisissez le nom dans le champ de recherche et cliquez sur "Rechercher".
+   - Supprimer un fichier : Sélectionnez un fichier dans le Treeview et cliquez sur "Supprimer".
+   - Trier les fichiers : Cliquez sur "Trier" dans le menu et choisissez l'option de tri(il faut l'écrire).
+   - Ouvrir un dossier : Double-cliquez sur un dossier dans le Treeview ou utilisez "Fichier -> Ouvrir un dossier".
+   - Revenir au dossier parent : Cliquez sur "Dossier Parent" dans le menu.
+
+Remarque : 
+   - la fenêtre est personnalisable: le style et la taille.
+   - La majorité des features provient de la librairy tkinter notament le style
+   - Si vous télécharger le projet bien mettre a jour le chemin vers cette documentation 
+   - J'ai fait ce projet sur mon mac il est possible qu'il ne soit pas compatible avec d'autre machines
+
+
+ARDJOUNE Nawfoel
+17802257
