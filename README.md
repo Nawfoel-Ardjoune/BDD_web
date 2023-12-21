@@ -15,10 +15,11 @@ Cette application est réaliser dans le cadre d'un devoir universitaire visant �
 ## Utilisation
 1. Ouvrir l'application (avec l'éxécutable ou en ligne de commande voir fin de page).
 2. Utiliser le menu "Fichier" pour parcourir un dossier ou quitter l'application.
-3. Utiliser les boutons pour trier, supprimer, ou rechercher des fichiers par nom.
+4. Cliqué un première fois sur le "rechercher par nom" pour afficher la base de Données
+3. Utiliser les boutons pour trier, supprimer, ou rechercher des fichiers par nom comme suit dans la documentation.
 
 ## Aide
-Une section aide est disponible dans le menu. Elle ouvre un document text (Ou un lien vers mon GitHub) pour vous aider. 
+Une section aide est disponible dans le menu. Elle ouvre un document text (Ou un lien vers mon GitHub) pour vous aider. Elle contient de plus amples informations.  
 
 ## Prérequis
 - Python 3.x

@@ -1,26 +1,74 @@
-c'est un simple gestionnaire de fichiers fait pour un projet en web
+GestionBaseDeDonneesApp - Documentation des Fonctions
+
+1. __init__(self, root)
+Description : Initialise l'application.
+Configure l'interface graphique, y compris les menus, les boutons et la connexion à la base de données.
+Crée la structure initiale de la table dans la base de données.
+Configure et affiche les données initiales dans le composant Treeview.
+S'occupe aussi de détruire le processus pour libérer la mémoire.
+
+2. afficher_donnees(self)
+Description : Affiche les données dans le composant Treeview.
+Efface les données existantes dans le composant Treeview.
+Récupère les données depuis la base de données et les insère dans le composant Treeview.
+
+3. tri(self)
+Description : Trie les données en fonction des critères sélectionnés par l'utilisateur.
+Récupère le choix de tri et la préférence d'ordre de l'utilisateur avec un menu déroulant et un bouton d'ordre croissant et décroissant.
+Construit et exécute une requête SQL pour récupérer et afficher les données triées.
+
+4. toggle_ordre(self)
+- Description : Bascule entre l'ordre croissant et décroissant.
+- Modifie la préférence d'ordre (ASC ou DESC).
+- Appelle la fonction tri pour réappliquer le tri en fonction du nouvel ordre.
+
+5. supprimer(self)
+- Description : Supprime un fichier sélectionné de la base de données.
+- Récupère le fichier sélectionné dans le composant Treeview.
+- Demande confirmation à l'utilisateur avant la suppression des fichier existant.
+- Exécute une requête SQL pour supprimer le fichier de la base de données.
+- Supprime l'entrée du fichier du composant Treeview.
+
+6. parcourir_dossier(self)
+- Description : Parcourt et ajoute des fichiers depuis un répertoire.
+- Ouvre une boîte de dialogue de sélection de répertoire.
+- Appelle la fonction parcourir_dossier_impl pour parcourir et collecter des informations sur les fichiers (fonction récursive).
+- Insère les informations sur les fichiers dans la base de données.
+- Actualise le composant Treeview pour afficher les nouvelles données.
+
+7. parcourir_dossier_impl(self, dossier)
+- Description : Fonction auxiliaire pour parcourir un répertoire et les sous dossiers (recursivement).
+- Traverse le répertoire sélectionné, collecte des informations sur les fichiers.
+- Renvoie une liste de dictionnaires, chacun représentant un fichier avec des détails tels que le nom, le chemin, la date de création, la date de modification, le type et la taille.
+
+8. rechercher_par_nom(self)
+- Description : Recherche des fichiers par nom.
+- Récupère le nom saisi par l'utilisateur pour la recherche.
+- Construit et exécute une requête SQL avec une condition LIKE pour trouver les fichiers correspondants.
+- Affiche les résultats de la recherche dans le composant Treeview.
+
+9. open_documentation(self)
+- Description : Ouvre le fichier de documentation.
+- Lance l'application système par défaut pour ouvrir le fichier de documentation.
 
 Les Fonctionnalitées :
-   - Ouvrir un répertoire et afficher les fichiers/dossiers.
-   - Rechercher des fichiers par nom.
+   - Ouvrir un répertoire et afficher les fichiers.
+   - Rechercher des fichiers par nom ce que permet aussi de filtrer les extensions.
    - Supprimer des fichiers.
-   - Trier les fichiers par nom, type, date de création ou de modification.
-   - Ouvrir un dossier pour explorer son contenu.
-   - Revenir au dossier parent.
+   - Trier les fichiers par nom, type, date de création ou de modification et taille.
 
 Utilisation :
-   - Ouvrir un répertoire : Sélectionnez "Fichier -> Ouvrir" dans le menu.
-   - Rechercher des fichiers : Saisissez le nom dans le champ de recherche et cliquez sur "Rechercher".
+   - Ouvrir un répertoire : Sélectionnez "Fichier -> Ouvrir" dans le menu ou cliqué sur le bouton en bas de la fenêtre peu aussi être utiliser pour ajouter un nouveau dossier à la base de données.
+   - Rechercher des dossier parent 
+   - Cliquer une première fois sur recherche par nom pour tout afficher.
+   - Dans le champs recherche : Saisissez le nom du fichier et cliquez sur "Rechercher". Il affichera alors tout les fichier comportant cette suite de caractère. Fait la même chose pour afficher tout les élèment spécifique comme pour les extensions.
    - Supprimer un fichier : Sélectionnez un fichier dans le Treeview et cliquez sur "Supprimer".
-   - Trier les fichiers : Cliquez sur "Trier" dans le menu et choisissez l'option de tri(il faut l'écrire).
-   - Ouvrir un dossier : Double-cliquez sur un dossier dans le Treeview ou utilisez "Fichier -> Ouvrir un dossier".
+   - Trier les fichiers : Cliquez sur le menu déroulant pour choisir quel type de tri ensuite cliqué sur "Trier" enfin si vous souhaitez changer d'ordre il y à un bouton prévu à cet effet.
    - Revenir au dossier parent : Cliquez sur "Dossier Parent" dans le menu.
 
 Remarque : 
    - la fenêtre est personnalisable: le style et la taille.
    - La majorité des features provient de la librairy tkinter notament le style
-   - Si vous télécharger le projet bien mettre a jour le chemin vers cette documentation 
-   - J'ai fait ce projet sur mon mac il est possible qu'il ne soit pas compatible avec d'autre machines
 
 
 ARDJOUNE Nawfoel
