@@ -23,7 +23,8 @@ Une base de données a été intégrée pour stocker des informations sur les fi
 1. L’ID dans la base de données (son index). 2. Le nom du fichier.
 3. Le chemin d’accès au fichier.
 4. La date d’ajout.
-5. La date de modification. 6. Le type (extensions).
+5. La date de modification. 
+6. Le type (extensions).
 7. La taille.
 Elle est créée automatiquement si aucune n’est donnée en paramètre.
 
