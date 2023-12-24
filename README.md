@@ -18,6 +18,15 @@ Cette application est réaliser dans le cadre d'un devoir universitaire visant �
 4. Cliqué un première fois sur le "rechercher par nom" pour afficher la base de Données
 3. Utiliser les boutons pour trier, supprimer, ou rechercher des fichiers par nom comme suit dans la documentation.
 
+## Base de données
+Une base de données a été intégrée pour stocker des informations sur les fichiers, telles que :
+1. L’ID dans la base de données (son index). 2. Le nom du fichier.
+3. Le chemin d’accès au fichier.
+4. La date d’ajout.
+5. La date de modification. 6. Le type (extensions).
+7. La taille.
+Elle est créée automatiquement si aucune n’est donnée en paramètre.
+
 ## Aide
 Une section aide est disponible dans le menu. Elle ouvre un document text (Ou un lien vers mon GitHub) pour vous aider. Elle contient de plus amples informations.  
 

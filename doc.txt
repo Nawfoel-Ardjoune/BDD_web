@@ -51,6 +51,15 @@ Construit et exécute une requête SQL pour récupérer et afficher les données
 - Description : Ouvre le fichier de documentation.
 - Lance l'application système par défaut pour ouvrir le fichier de documentation.
 
+Base de données :
+Une base de données a été intégrée pour stocker des informations sur les fichiers, telles que :
+1. L’ID dans la base de données (son index). 2. Le nom du fichier.
+3. Le chemin d’accès au fichier.
+4. La date d’ajout.
+5. La date de modification. 6. Le type (extensions).
+7. La taille.
+Elle est créée automatiquement si aucune n’est donnée en paramètre.
+
 Les Fonctionnalitées :
    - Ouvrir un répertoire et afficher les fichiers.
    - Rechercher des fichiers par nom ce que permet aussi de filtrer les extensions.
